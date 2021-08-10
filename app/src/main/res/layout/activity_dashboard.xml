@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="258dp"
+                android:layout_height="59dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="196dp"
+                android:layout_height="33dp"
+                android:text="Dashboard"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="296dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Jumlah Kegiatan!"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="40dp"
+                    android:text="52"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="124dp"
+                    android:layout_height="128dp"
+                    app:srcCompat="@drawable/ic_baseline_view_list_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="296dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Jumlah Konseling!"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="40dp"
+                    android:text="15"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="124dp"
+                    android:layout_height="126dp"
+                    app:srcCompat="@drawable/ic_baseline_support_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="296dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="25dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="120dp"
+                    android:layout_height="121dp"
+                    app:srcCompat="@drawable/ic_baseline_support_24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Jumlah Konselor!"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="40dp"
+                    android:text="9"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="296dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Jumlah Admin!"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="40dp"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="113dp"
+                    android:layout_height="117dp"
+                    app:srcCompat="@drawable/ic_baseline_person_24" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/primaryVariant"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:menu="@menu/menu" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

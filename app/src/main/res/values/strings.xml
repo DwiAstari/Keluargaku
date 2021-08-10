@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Keluargaku</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="menu_info">Informasi</string>
+    <string name="menu_kegiatan">Kegiatan</string>
+    <string name="menu_buku">Buku</string>
+    <string name="menu_video">video</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_masuk">Masuk</string>
+    <string name="login_akses">Akses Akun</string>
+    <string name="login_user">Nama Pengguna</string>
+    <string name="login_password">Kata Sandi</string>
+    <string name="login_username">   Username</string>
+    <string name="login_password_hint">   ********</string>
+
+    <string name="nama">Dwi Astari</string>
+    <string name="email">Dwi@gmail.com</string>
+    <string name="umur">21</string>
+    <string name="no.hp">082285748372</string>
+    <string name="Domisili">Pekanbaru</string>
+
+    <string name="Hari">Hari</string>
+    <string name="Layanan">Layanan</string>
+
+    <string name="senin">Senin</string>
+    <string name="selasa">Selasa</string>
+    <string name="rabu">Rabu</string>
+    <string name="Kamis">Kamis</string>
+    <string name="jumat">Jumat</string>
+
+
+</resources>
