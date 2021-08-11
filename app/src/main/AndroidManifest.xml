@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PA_Keluargaku">
         <activity
+            android:name=".KegiatanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Ganti_Password_Activity"
+            android:exported="true" />
+        <activity
             android:name=".SettingActivity"
             android:exported="true" />
         <activity

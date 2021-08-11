@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,191 +7,119 @@
     tools:context=".profileActivity">
 
 
-    <RelativeLayout
-        android:id="@+id/rellay1"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:background="@color/primary"
-        android:paddingBottom="20dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-        <RelativeLayout
-            android:id="@+id/imgUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/ivFotoProfil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/circle_border">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="9dp"
-                android:adjustViewBounds="true"
-                android:background="@drawable/circle"
-                android:padding="3dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_user" />
-
-        </RelativeLayout>
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tvNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgUser"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15sp"
-            android:fontFamily="sans-serif-light"
-            android:text="Joey Tribbiani"
+            android:layout_marginTop="10dp"
+            android:text="@string/nama"
             android:textColor="@color/black"
-            android:textSize="32sp" />
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoProfil"
+            app:layout_constraintVertical_bias="0.0" />
 
-        <ImageButton
+        <TextView
+            android:id="@+id/tvNoHp"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:layout_above="@+id/tv_name"
-            android:layout_alignTop="@+id/imgUser"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="348dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="-14dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="98dp"
-            android:background="@drawable/ic_settings"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            android:layout_height="wrap_content"
+            android:text="@string/Domisili"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNama"
+            app:layout_constraintVertical_bias="0.0" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ubahProfil"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_stroke_bottom"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:text="Ubah Profil"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/ubahPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp">
+        android:layout_height="50dp"
+        android:background="@drawable/shape_stroke_bottom"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ubahProfil">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Email"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="joey@sharenofood.com"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grey" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Phone"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="+1-202-555-0157"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grey" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Umur"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="36"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grey" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Domisili"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="@string/Domisili"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/grey" />
-
-            </LinearLayout>
-        </LinearLayout>
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:text="Ubah Password"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
     </RelativeLayout>
-</RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/keluar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_stroke_bottom"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ubahPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="10dp"
+            android:text="Keluar"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

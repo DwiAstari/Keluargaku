@@ -5,19 +5,24 @@
       <map>
         <entry key="..\:/PA_Keluargaku/app/src/main/res/drawable/circle.xml" value="0.2703125" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/drawable/circle_border.xml" value="0.2703125" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/drawable/ic_baseline_support_24.xml" value="0.2265625" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/drawable/ic_settings.xml" value="0.2703125" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/drawable/shape_stroke_bottom.xml" value="0.2265625" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_beranda.xml" value="0.264" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_daftar.xml" value="0.264" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_dashboard.xml" value="0.176" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_ebook.xml" value="0.25416666666666665" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_faqactivity.xml" value="0.264" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_ganti_password.xml" value="0.2391304347826087" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_informasi.xml" value="0.264" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_kegiatan.xml" value="0.2346014492753623" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_setting.xml" value="0.13722826086956522" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_setting.xml" value="0.264" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/activity_video.xml" value="0.2" />
         <entry key="..\:/PA_Keluargaku/app/src/main/res/layout/auth.xml" value="0.25416666666666665" />
+        <entry key="..\:/PA_Keluargaku/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>

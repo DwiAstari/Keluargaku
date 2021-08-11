@@ -6,4 +6,170 @@
     android:layout_height="match_parent"
     tools:context=".SettingActivity">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/primary"
+                    app:layout_constraintHeight_percent=".28"
+                    tools:ignore="MissingConstraints">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_profile"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="@id/header"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_camera"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="158dp"
+                        tools:layout_editor_absoluteY="97dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                 <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/grey"
+                    app:layout_constraintHeight_percent=".07"
+                    app:layout_constraintTop_toBottomOf="@+id/header">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="Edit Data"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                 </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="415dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="248dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:text="Nama"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/textColorSecondary"
+            android:text="@string/nama"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_age"
+            android:drawablePadding="10dp"
+            android:text="Umur"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/textColorSecondary"
+            android:text="@string/umur"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:text="No.Hp"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/textColorSecondary"
+            android:text="@string/no.hp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_domisili"
+            android:drawablePadding="10dp"
+            android:text="Domisili"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/textColorSecondary"
+            android:text="@string/Domisili"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+            <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:background="@color/primaryVariant"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
