@@ -46,7 +46,7 @@
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
+        android:id="@+id/bottomNavigationView1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/primaryVariant"
@@ -111,7 +111,7 @@
         android:layout_width="165dp"
         android:layout_height="118dp"
         app:cardBackgroundColor="@color/primary"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +142,7 @@
         android:layout_width="364dp"
         android:layout_height="5dp"
         app:cardBackgroundColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
