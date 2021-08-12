@@ -87,6 +87,7 @@
         android:layout_width="379dp"
         android:layout_height="81dp"
         android:textSize="15dp"
+        android:layout_marginBottom="50dp"
         android:text="Pusyanra buka setiapa hari senin hingga jumat pada jam kerja 08.00 - 16.00. namun juga melayani konseling melalui daring. Baik WA, SMS, HOTLINE SERVICE maupun sosmed lainnya."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +95,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -106,8 +110,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/menu"/>
-        </LinearLayout>
-    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

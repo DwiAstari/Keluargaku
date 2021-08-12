@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SettingActivity">
 
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/header"
                     android:layout_width="match_parent"
@@ -45,6 +46,7 @@
                     android:background="@color/grey"
                     app:layout_constraintHeight_percent=".07"
                     app:layout_constraintTop_toBottomOf="@+id/header">
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -156,7 +158,8 @@
 
     </LinearLayout>
 
-            <Button
+
+    <Button
             android:id="@+id/buttonEdit"
             android:layout_width="match_parent"
             android:layout_height="60dp"
