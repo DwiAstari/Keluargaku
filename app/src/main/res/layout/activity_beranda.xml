@@ -104,7 +104,6 @@
             android:textColor="@color/black"
             android:textSize="40dp" />
 
-
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
